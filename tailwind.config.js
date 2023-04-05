@@ -11,6 +11,7 @@ module.exports = {
       orange: '#FA7C54',
       text: '#4D4D4D',
       secondaryText: '#ABABAB',
+      background: '#F3F3F7',
     },
   },
   plugins: [],
