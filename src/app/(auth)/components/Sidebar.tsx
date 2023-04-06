@@ -22,7 +22,7 @@ export function Sidebar() {
             Home
           </Link>
           <Link
-            href="/home"
+            href="/search"
             className={`${
               path === '/search' ? 'text-text' : 'text-secondaryText'
             } flex gap-1`}
@@ -31,7 +31,7 @@ export function Sidebar() {
             Search
           </Link>
           <Link
-            href="/home"
+            href="/my-shelf"
             className={`${
               path === '/my-shelf' ? 'text-text' : 'text-secondaryText'
             } flex gap-1`}
@@ -40,7 +40,7 @@ export function Sidebar() {
             My shelf
           </Link>
           <Link
-            href="/home"
+            href="/contribute"
             className={`${
               path === '/contribute' ? 'text-text' : 'text-secondaryText'
             } flex gap-1`}
