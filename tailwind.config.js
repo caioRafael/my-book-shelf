@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     backgroundImage: {
       app: 'url(/bg-image.svg)',
+      carousel: 'linear-gradient(to bottom right, #FA7C54, #571FCF)',
     },
     colors: {
       white: '#ffffff',
@@ -14,5 +15,5 @@ module.exports = {
       background: '#F3F3F7',
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar')],
 }
