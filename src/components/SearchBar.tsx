@@ -1,7 +1,7 @@
 'use client'
 import * as Toolbar from '@radix-ui/react-toolbar'
 import { ComboBox } from './ComboBox'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Search } from 'lucide-react'
 import { useState } from 'react'
 
 export function SearchBar() {
@@ -14,11 +14,14 @@ export function SearchBar() {
           <ChevronDown size={20} />
         </Toolbar.Button>
       </ComboBox>
-      <input
-        type="text"
-        placeholder="Search"
-        className="h-full w-[80%] rounded-r-full p-2"
-      />
+      <div className="w-[80%] h-full bg-white rounded-r-full flex items-center gap-2">
+        <input
+          type="text"
+          placeholder="Search"
+          className="h-full w-[85%] p-2"
+        />
+        <Search size={20} className="text-orange" />
+      </div>
     </Toolbar.Root>
   )
 }
